@@ -1,0 +1,11 @@
+<h1>Datos a mostrar:</h1>
+
+<h3> Usuarios:</h3>
+<ul *ngFor="let usuario of usuarios | async">
+    <li>
+        <p>Nombre: {{usuario.nombre}} {{usuario.apellido}}</p>
+        <p>Nota parcial: {{usuario.nota}}</p>
+    </li>
+</ul>
+<p> Usuarios aprobados:</p>
+{{usuariosAprobados | json}}
